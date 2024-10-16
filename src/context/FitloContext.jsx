@@ -1,8 +1,9 @@
 import { createContext, useRef, useEffect } from "react";
+import { institutions } from "../assets/assets";
 
-export const KnivatContext = createContext();
+export const FitloContext = createContext();
 
-const KnivatContextProvider = (props) => {
+const FitloContextProvider = (props) => {
 
 
     //dynamic title page rendering
@@ -21,15 +22,16 @@ const KnivatContextProvider = (props) => {
     }
 
     const value = {
+        institutions,
         useDocumentTitle,
     }
 
     return (
-        <KnivatContext.Provider value={value}>
+        <FitloContext.Provider value={value}>
             {props.children}
-        </KnivatContext.Provider>
+        </FitloContext.Provider>
     )
 
 }
 
-export default KnivatContextProvider;
+export default FitloContextProvider;

@@ -1,8 +1,8 @@
 import React, {useContext} from 'react'
-import { KnivatContext } from '../context/KnivatContext'
+import { FitloContext } from '../context/FitloContext'
 
 const Contact = () => {
-    const {useDocumentTitle} = useContext(KnivatContext);
+    const {useDocumentTitle} = useContext(FitloContext);
     useDocumentTitle("Contact KNIVAT");
   return (
     <div>Contact</div>

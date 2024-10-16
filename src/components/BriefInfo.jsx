@@ -11,7 +11,7 @@ import { RiDoubleQuotesR } from "react-icons/ri";
 
 const BriefInfo = () => {
   return (
-    <section className='min-h-[20vh] my-20'>
+    <section className='min-h-[20vh] my-20 '>
         <div className='flex flex-col gap-10'>
             <div className='grid grid-cols-2 sm:grid-cols-3 lg:flex items-center justify-between gap-5'>
                 <div className='flex flex-col hover:-translate-y-1 hover:cursor-default transition-all duration-150 items-center text-center bg-white border shadow-md px-4 py-3 '>
@@ -22,7 +22,7 @@ const BriefInfo = () => {
                 <div className='flex flex-col hover:-translate-y-1 hover:cursor-default transition-all duration-150 items-center text-center bg-white border shadow-md px-4 py-3 '>
                     <TbLicense className='text-4xl mb-2 text-orange-900'/>
                     <h1 className='font-medium mb-1'>Acredited</h1>
-                    <p className='text-sm'>ACK chattered University</p>
+                    <p className='text-sm'>CUE chattered Universities</p>
                 </div>
                 <div className='flex flex-col hover:-translate-y-1 hover:cursor-default transition-all duration-150 items-center text-center bg-white border shadow-md px-4 py-3 '>
                     <FaBookOpen className='text-4xl mb-2 text-orange-900'/>
@@ -37,22 +37,12 @@ const BriefInfo = () => {
                 <div className='flex flex-col hover:-translate-y-1 hover:cursor-default transition-all duration-150 items-center text-center bg-white border shadow-md px-4 py-3 '>
                     <FaLocationCrosshairs className='text-4xl mb-2 text-orange-900'/>
                     <h1 className='font-medium mb-1'>Location</h1>
-                    <p className='text-sm'>Conducive institutional environments</p>
+                    <p className='text-sm'>Conducive learning environments</p>
                 </div>
                 <div className='flex flex-col hover:-translate-y-1 hover:cursor-default transition-all duration-150 items-center text-center bg-white border shadow-md px-4 py-3 '>
                     <IoSchoolSharp className='text-4xl mb-2 text-orange-900'/>
                     <h1 className='font-medium mb-1'>Graduation</h1>
                     <p className='text-sm'>Incredible graduation ceremonies</p>
-                </div>
-            </div>
-            <div className='text-center mt-20 flex flex-col items-center justify-center'>
-                <h1 className='text-4xl'>Quote Of the day</h1>
-                <div className='mt-6'>
-                    <h1 className='flex text-lg'>
-                        <RiDoubleQuotesL/>                    
-                        Education is the passport to the future, for tomorrow belongs to those who prepare for it today.
-                        <RiDoubleQuotesR/>
-                    </h1>
                 </div>
             </div>
         </div>

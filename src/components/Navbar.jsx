@@ -12,7 +12,7 @@ const Navbar = () => {
     const [menuBar, setMenuBar] = useState(false);
   return (
     <div>
-        <header className='navbar hidden lg:flex items-center justify-between px-8 py-3 shadow-md bg-white text-slate-950 overflow-x-hidden'>
+        <header className='navbar hidden lg:flex items-center justify-between px-8 py-3 shadow-md bg-white text-slate-950 overflow-x-hidden mb-2'>
             <h1 className='text-xl font-bold'>fitlo.</h1>
 
             <ul className={`${searchBar === false ? "flex" : "hidden"} items-center gap-4 font-medium`}>
