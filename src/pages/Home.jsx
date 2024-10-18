@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import BriefInfo from '../components/BriefInfo';
 import TopSchools from '../components/TopSchools';
 import QuoteComponent from '../components/QuoteComponent';
+import TopNews from '../components/TopNews';
 
 const Home = () => {
     const {useDocumentTitle} = useContext(FitloContext);
@@ -15,6 +16,7 @@ const Home = () => {
       <hr/>
       <TopSchools/>
       <QuoteComponent/>
+      <TopNews/>
     </div>
   )
 }

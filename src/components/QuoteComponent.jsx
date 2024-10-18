@@ -1,36 +1,64 @@
 import React from 'react'
-import { RiDoubleQuotesL } from "react-icons/ri";
-import { RiDoubleQuotesR } from "react-icons/ri";
+import { assets } from '../assets/assets';
+import { Link } from 'react-router-dom';
+import { FaUserGraduate } from "react-icons/fa6";
+import { FaGraduationCap } from "react-icons/fa6";
+import { GiDiploma } from "react-icons/gi";
+import { PiCertificateFill } from "react-icons/pi";
+import { AiFillSafetyCertificate } from "react-icons/ai";
+import { FaCertificate } from "react-icons/fa";
+
 
 const QuoteComponent = () => {
   return (
-    <div className='flex items-center justify-between quote-page -z-10 px-4 sm:px-8 min-h-[60vh] bg-white mx-6 rounded-2xl mb-4 bg-bg-blend-hard-light py-10 lg:py-0 overflow-hidden'>
-        <div className='overlay -z-10'></div>
+    <div className='flex items-center justify-between quote-page px-4 sm:px-8 min-h-[60vh] bg-white mx-6 rounded-2xl mb-4 bg-bg-blend-hard-light py-10 lg:py-0 overflow-hidden'>
+        <div className='overlay '></div>
 
-        <div className='text-white flex flex-col lg:flex-row justify-between gap-4 mr-4'>
-            <div className='max-w-[700px]'>
-                <h1 className='text-4xl sm:text-5xl font-semibold mb-2'>Quote of the day</h1>
-                <p className='text-lg text-gray-100'>
-                    <RiDoubleQuotesL/>
-                    Education is the passport to the future, for tomorrow belongs to those who prepare for it today
-                    <RiDoubleQuotesR/>
-                </p>
-
-                <div className='mt-3'>
-                    <h2 className='font-medium text-xl mb-2'>Meaning of the quote</h2>
-                    <p>
-                    This quote by Malcom X emphasizes the essential role of education in shaping our future and highlights that proactive learning and preparation are crucial for success. It serves as a reminder that investing in our education is not just about acquiring knowledge; it's about equipping ourselves to seize future opportunities and navigate challenges effectively.
+        <div className='text-white z-10 py-10'>
+            <div className='grid md:grid-cols-2 justify-between gap-4'>
+                <div>
+                    <h1 className='text-3xl md:text-4xl font-semibold mb-4'>University of the Day</h1>
+                    <img className='md:w-[30vw] mb-3 shadow-2xl rounded-2xl' src={assets.zetect_logo} />
+                    <p className='text-xl font-medium mb-3'>Motto: Invent your future</p>
+                    <p className='mb-5'>Zetech University is a leading technology and entrepreneurial university in Kenya that is committed to promoting excellence in education and research by integrating innovation and technology to impact society.</p>
+                    <p className='bg-slate-900 w-fit px-4 py-2 rounded-2xl cursor-pointer hover:bg-orange-900 hover:shadow-md'>
+                        <Link to='https://www.zetech.ac.ke/' target='_blank'>Learn More</Link>
                     </p>
                 </div>
-            </div>
-
-            <form className='w-full '>
-                <h3 className='mb-3 mt-4 lg:mt-0 text-xl'>Get more quotes</h3>
-                <div className='w-full sm:max-w-[50%] lg:w-full bg-white flex justify-between'>
-                    <input type="text" placeholder='email address' className='bg-transparent border-none outline-non px-3' />
-                    <button type='submit' className='bg-orange-900 py-2 md:px-3'>Subscribe</button>
+                
+                {/* programmes offered at uiniversity of the day */}
+                <div>
+                    <h4 className='text-2xl text-center mb-4'>Programmes Offered</h4>
+                    <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-6 px-6 sm:px-0'>
+                        <div className='programme-card flex flex-col items-center gap-3 px-6 py-4 w-ful text-center text-white rounded-2xl'>
+                            <FaUserGraduate className=' text-slate-900 text-4xl'/>
+                            <p>Post Graduate Courses</p>
+                        </div>
+                        <div className='programme-card flex flex-col items-center gap-3 px-6 py-4 w-ful text-center text-white rounded-2xl'>
+                            <FaGraduationCap className=' text-slate-900 text-4xl'/>
+                            <p>Degree Courses</p>
+                        </div>
+                        <div className='programme-card flex flex-col items-center gap-3 px-6 py-4 w-ful text-center text-white rounded-2xl'>
+                            <GiDiploma className=' text-slate-900 text-4xl'/>
+                            <p>Diploma Courses</p>
+                        </div>
+                        <div className='programme-card flex flex-col items-center gap-3 px-6 py-4 w-ful text-center text-white rounded-2xl'>
+                            <PiCertificateFill className=' text-slate-900 text-4xl'/>
+                            <p>Certificate Courses</p>
+                        </div>
+                        <div className='programme-card flex flex-col items-center gap-3 px-6 py-4 w-ful text-center text-white rounded-2xl'>
+                            <AiFillSafetyCertificate className=' text-slate-900 text-4xl'/>
+                            <p>TVET Courses</p>
+                        </div>
+                        <div className='programme-card flex flex-col items-center gap-3 px-6 py-4 w-ful text-center text-white rounded-2xl'>
+                            <FaCertificate className=' text-slate-900 text-4xl'/>
+                            <p>Corporate Academy</p>
+                        </div>
+                    </div>
                 </div>
-            </form>
+            </div>
+          
+       
         </div>
     </div>
   )

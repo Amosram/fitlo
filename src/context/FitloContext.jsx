@@ -1,5 +1,5 @@
 import { createContext, useRef, useEffect } from "react";
-import { institutions } from "../assets/assets";
+import { institutions, news } from "../assets/assets";
 
 export const FitloContext = createContext();
 
@@ -23,6 +23,7 @@ const FitloContextProvider = (props) => {
 
     const value = {
         institutions,
+        news,
         useDocumentTitle,
     }
 

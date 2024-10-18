@@ -5,6 +5,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
 import InstitutionInfo from './pages/InstitutionInfo'
+import NewsInfo from './pages/NewsInfo'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/institution:institutionId' element={<InstitutionInfo/>} />
+        <Route path='news:newsId' element={<NewsInfo/>}/>
       </Routes>
     </div>
   )

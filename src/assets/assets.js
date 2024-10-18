@@ -5,11 +5,16 @@ import hero_left_img3 from './images/hero-left-img3.jpeg';
 import uonImg1 from './images/uonImg1.png';
 import uonImg2 from './images/uonImg2.png';
 
+import newsImg1 from './images/news-img1.png'
+
+import zetect_logo from './images/zetech-logo.png'
+
 
 export const assets = {
     hero_left_img1,
     hero_left_img2,
     hero_left_img3,
+    zetect_logo,
 }
 
 export const institutions = [
@@ -77,4 +82,56 @@ export const institutions = [
         rating: 4.77,
         county: "Mombasa",
     },
+]
+
+export const news = [
+    {
+        _id: "aaa1",
+        image:newsImg1,
+        titleBar:"UoN",
+        title:"UoN Hosts Inaugural Science Communication and Diplomacy Conference",
+        brief_description: "The University of Nairobi played host to the inaugural Science Communication and Diplom"
+    },
+    {
+        _id: "aaa2",
+        image:newsImg1,
+        titleBar:"Goverment Of Kenya",
+        title:"UoN Hosts Inaugural Science Communication and Diplomacy Conference",
+        brief_description: "The University of Nairobi played host to the inaugural Science Communication and Diplom"
+    },
+    {
+        _id: "aaa3",
+        image:newsImg1,
+        titleBar:"UoN",
+        title:"UoN Hosts Inaugural Science Communication and Diplomacy Conference",
+        brief_description: "The University of Nairobi played host to the inaugural Science Communication and Diplom"
+    },
+    {
+        _id: "aaa4",
+        image:newsImg1,
+        titleBar:"UoN",
+        title:"UoN Hosts Inaugural Science Communication and Diplomacy Conference",
+        brief_description: "The University of Nairobi played host to the inaugural Science Communication and Diplom"
+    },
+    {
+        _id: "aaa5",
+        image:newsImg1,
+        titleBar:"UoN",
+        title:"UoN Hosts Inaugural Science Communication and Diplomacy Conference",
+        brief_description: "The University of Nairobi played host to the inaugural Science Communication and Diplom"
+    },
+    {
+        _id: "aaa6",
+        image:newsImg1,
+        titleBar:"UoN",
+        title:"UoN Hosts Inaugural Science Communication and Diplomacy Conference",
+        brief_description: "The University of Nairobi played host to the inaugural Science Communication and Diplom"
+    },
+    {
+        _id: "aaa7",
+        image:newsImg1,
+        titleBar:"UoN",
+        title:"UoN Hosts Inaugural Science Communication and Diplomacy Conference",
+        brief_description: "The University of Nairobi played host to the inaugural Science Communication and Diplom"
+    }
 ]
