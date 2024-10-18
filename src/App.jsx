@@ -6,6 +6,7 @@ import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
 import InstitutionInfo from './pages/InstitutionInfo'
 import NewsInfo from './pages/NewsInfo'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/institution:institutionId' element={<InstitutionInfo/>} />
         <Route path='news:newsId' element={<NewsInfo/>}/>
       </Routes>
+      <Footer/>
     </div>
   )
 }

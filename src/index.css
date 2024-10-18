@@ -45,6 +45,12 @@ body {
     backdrop-filter: blur(5px);
 }
 
+.footer-logo {
+    background: linear-gradient(to right, #7c2d12 , pink);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* Background images */
 .hero {
     background: url("../bg-images/heo-bg5.png") no-repeat;
