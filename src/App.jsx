@@ -7,6 +7,7 @@ import Institutions from './pages/Institutions'
 import Navbar from './components/Navbar'
 import InstitutionInfo from './pages/InstitutionInfo'
 import NewsInfo from './pages/NewsInfo'
+import News from './pages/News'
 import Footer from './components/Footer'
 
 const App = () => {
@@ -19,6 +20,8 @@ const App = () => {
         <Route path='/about' element={<About/>} />
         <Route path='/allInstitutions' element={<Institutions/>} />
         <Route path='/contact' element={<Contact/>} />
+        <Route path='/contact' element={<Contact/>} />
+        <Route path='/news' element={<News/>} />
         <Route path='newsInfo/:newsId' element={<NewsInfo/>}/>
       </Routes>
       <Footer/>
