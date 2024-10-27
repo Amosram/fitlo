@@ -1,14 +1,14 @@
 import React, {useContext} from 'react'
 import { FitloContext } from '../context/FitloContext'
 
-const Contact = () => {
+const Institutions = () => {
     const {useDocumentTitle} = useContext(FitloContext);
-    useDocumentTitle("Contact Us");
+    useDocumentTitle("All Institutions");
   return (
     <section>
-
+        All institutions
     </section>
   )
 }
 
-export default Contact
+export default Institutions

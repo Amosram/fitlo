@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { FitloContext } from '../context/FitloContext'
+import { useParams } from 'react-router-dom';
 
 const NewsInfo = () => {
+  const {useDocumentTitle} = useContext(FitloContext);
+  useDocumentTitle(`fitlo | universite`)
   return (
-    <div>NewsInfo</div>
+    <section>
+      Information
+    </section>
   )
 }
 

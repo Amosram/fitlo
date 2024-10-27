@@ -8,6 +8,7 @@ import uonImg2 from './images/uonImg2.png';
 import newsImg1 from './images/news-img1.png'
 
 import zetect_logo from './images/zetech-logo.png'
+import ceo_img from './images/ceo-img.png'
 
 
 export const assets = {
@@ -15,6 +16,7 @@ export const assets = {
     hero_left_img2,
     hero_left_img3,
     zetect_logo,
+    ceo_img,
 }
 
 export const institutions = [

@@ -51,6 +51,10 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.active {
+    color:#7c2d12;
+}
+
 /* Background images */
 .hero {
     background: url("../bg-images/heo-bg5.png") no-repeat;

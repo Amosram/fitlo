@@ -6,7 +6,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const InstitutionCard = ({id, name, type, images, rating, county}) => {
   return (
-    <div className='bg-white rounded-xl md:rounded-2xl shadow-md pb-2 cursor-pointer'>
+    <div className='bg-white  hover:bg-gray-100 duration-150 rounded-xl md:rounded-2xl shadow-md pb-2 cursor-pointer'>
         <Link className='text-gray-700 cursor-pointer' to={`/institution/${id}`}>
             <div className='overflow-hidden mb-3 rounded-2xl'>
                 <img className='hover:scale-105 transition ease-in-out  rounded-xl md:rounded-2xl' src={images[0]} alt=""/>

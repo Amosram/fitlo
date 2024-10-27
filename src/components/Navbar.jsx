@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { IoSearch } from "react-icons/io5";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { IoClose } from "react-icons/io5";
 import { FiMenu } from "react-icons/fi";
 
@@ -13,23 +13,22 @@ const Navbar = () => {
   return (
     <div>
         <header className='navbar hidden lg:flex items-center justify-between px-8 py-3 shadow-md bg-white text-slate-950 overflow-x-hidden mb-2'>
-            <h1 className='text-xl font-bold'>fitlo.</h1>
+            
+            <Link to='/'><h1 className='text-xl font-bold'>fitlo.</h1></Link>
 
             <ul className={`${searchBar === false ? "flex" : "hidden"} items-center gap-4 font-medium`}>
                 <li>
-                    <Link to='/'>Home</Link>
+                    <NavLink to='/'>Home</NavLink>
+                </li>
+        
+                <li>
+                    <NavLink to='/allInstitutions'>Institutions</NavLink>
                 </li>
                 <li>
-                    Programmes
+                    <NavLink to='/about'>About</NavLink>
                 </li>
                 <li>
-                    Institutions
-                </li>
-                <li>
-                    About
-                </li>
-                <li>
-                    News
+                    <NavLink to='/news'>News</NavLink>
                 </li>
             </ul>
 
@@ -45,12 +44,12 @@ const Navbar = () => {
                         }
                     </div>               
                 </div>
-                <button className='bg-gray-900 text-gray-100 px-3 rounded-xl py-[5px] hover:shadow-sm transition-all duration-150 hover:bg-orange-900'>Contact Us</button>
+                <Link to='/contact/'><button className='bg-gray-900 text-gray-100 px-3 rounded-xl py-[5px] hover:shadow-sm transition-all duration-150 hover:bg-orange-900'>Contact Us</button></Link>
             </div>
         </header>
 
         <div className='lg:hidden flex items-center justify-between px-8 py-3 shadow-md bg-white text-slate-950 relative z-10'>
-            <h1 className='text-xl font-bold'>fitlo.</h1>
+           <Link to='/'><h1 className='text-xl font-bold'>fitlo.</h1></Link>
 
             <div className='flex items-center gap-3'>
                 <div className='flex items-center bg-gray-100 rounded-md px-2 text-slate-950 py-[2px] border shadow-sm'>
@@ -75,19 +74,19 @@ const Navbar = () => {
             </div>
             <ul className={`sidebar  absolute ${menuBar === false ?"translate-x-[1000px]":""} top-full transition-all ease-in-out shadow-md duration-300 left-0 bg-white flex flex-col  px-8 gap-4 font-medium w-full py-2 pb-4`}>
                 <li>
-                    <Link to='/'>Home</Link>
+                    <NavLink to='/' onClick={()=>setMenuBar(!menuBar)}>Home</NavLink>
                 </li>
                 <li>
-                    Programmes
+                    <NavLink to='/allInstitutions' onClick={()=>setMenuBar(!menuBar)}>Institutions</NavLink>
                 </li>
                 <li>
-                    Institutions
+                    <NavLink to='/about' onClick={()=>setMenuBar(!menuBar)}>About</NavLink>
                 </li>
                 <li>
-                    About
+                    <NavLink to='/news' onClick={()=>setMenuBar(!menuBar)}>News</NavLink>
                 </li>
                 <li>
-                    News
+                    <NavLink to='/contact' onClick={()=>setMenuBar(!menuBar)}>Contact</NavLink>
                 </li>
             </ul>
         </div>
