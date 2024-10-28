@@ -12,7 +12,7 @@ import { FaCertificate } from "react-icons/fa";
 const QuoteComponent = () => {
   return (
     <div className='flex items-center justify-between quote-page px-4 sm:px-8 min-h-[60vh] bg-white mx-6 rounded-2xl mb-4 bg-bg-blend-hard-light py-10 lg:py-0 overflow-hidden'>
-        <div className='overlay '></div>
+        <div className='overlay'></div>
 
         <div className='text-white z-10 py-10'>
             <div className='grid md:grid-cols-2 justify-between gap-4'>

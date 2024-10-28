@@ -18,8 +18,7 @@ const About = () => {
     <section className='py-6'>
       <div className='text-slate-900 '>
         <div className='flex items-center justify-center gap-1 mb-10'>
-          <p className='bg-gray-600 w-8 h-[2px]'></p>
-          <h1 className='text-3xl text-slate-950 font-medium'>About Us</h1>
+          <h1 className='text-3xl text-orange-900 border shadow-sm px-3 py-1 rounded-2xl font-medium'>About Us</h1>
         </div>
 
         <div className='text-slate-900 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-y-6 lg:gap-y-0 mb-10'>

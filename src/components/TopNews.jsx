@@ -11,14 +11,11 @@ const TopNews = () => {
     }, [])
 
   return (
-    <section className='bg-gray-50 py-12 min-h-[50vh] *:first-letter:'>
+    <section className='bg-white py-12 min-h-[50vh] *:first-letter:'>
         {/* News title */}
-        <div className='text-center mb-12'>
-            <div className='flex items-center justify-center text-nowrap  gap-2 mb-2'>
-                <p className='w-16 h-[2px] bg-orange-900'></p>
-                <div></div>
-                <h1 className='text-slate-900 text-3xl font-medium'>Latest News</h1>
-                <p className='w-16 h-[2px] bg-orange-900'></p>
+        <div className='mb-12'>
+            <div className='gap-2 mb-2'>
+                <h1 className='border shadow-sm px-3 py-1 rounded-2xl w-fit text-orange-900 text-3xl font-medium relative'>Latest News</h1>
             </div>
             <p className='text-slate-700 text-base'>Catch up with top stories from the education sector </p>
         </div>
